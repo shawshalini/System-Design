@@ -14,8 +14,8 @@ Vehicle Types Service checks: "Is this a bike, car, or Ev?" — because differen
 Spot Allocation Service is like a spot finder — it searches the Parking Spot Database for a free spot
 Two outcomes:
 
-✅ Spot Available → goes to Reservation Service
-❌ Not Available → goes to Waitlist
+Spot Available → goes to Reservation Service
+Not Available → goes to Waitlist
 
 
 
@@ -30,8 +30,8 @@ This triggers Ticket Service which creates a parking ticket
 Payment Service charges the user upfront
 Two outcomes:
 
-✅ Success → Spot is officially reserved, details saved to Vehicle Parking Details DB
-❌ Failure → Spot gets released back to the pool
+ Success → Spot is officially reserved, details saved to Vehicle Parking Details DB
+ Failure → Spot gets released back to the pool
 
 
 
