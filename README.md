@@ -14,7 +14,8 @@ Vehicle Types Service checks: "Is this a bike, car, or Ev?" — because differen
 Spot Allocation Service is like a spot finder — it searches the Parking Spot Database for a free spot
 
 Two outcomes:
-Spot Available → goes to Reservation Service
+Spot Available → goes to Reservation Service.
+
 Not Available → goes to Waitlist
 
 
@@ -22,7 +23,9 @@ Not Available → goes to Waitlist
 3️⃣ Reservation
 
 Reservation Service shows the user the nearest available spot
+
 User picks their spot
+
 This triggers Ticket Service which creates a parking ticket
 
 4️⃣ Payment
@@ -30,7 +33,8 @@ This triggers Ticket Service which creates a parking ticket
 Payment Service charges the user upfront
 
 Two outcomes:
- Success → Spot is officially reserved, details saved to Vehicle Parking Details DB
+ Success → Spot is officially reserved, details saved to Vehicle Parking Details DB.
+ 
  Failure → Spot gets released back to the pool
 
 
@@ -38,14 +42,19 @@ Two outcomes:
 5️⃣ Spot Reserved
 
 Spot Reserved confirms everything is locked in.
+
 Reservation Expiry Service starts a 30-minute countdown timer.
+
 If the user never arrives in 30 mins → spot is automatically released
 
 6️⃣ Vehicle Exits
 
 Vehicle scans at exit gate → triggers Exit Service.
+
 Exit Service publishes to Event Broker.
+
 Event Broker broadcasts "Spot Released!"
+
 Waitlist Service Trigger picks this up and notifies the next person waiting.
 
 7️⃣ Waitlist Flow (When No Spot Available)
