@@ -5,7 +5,9 @@ Step by Step Flow
 
 
 Parking Lot System Flow
+
 1️⃣ Vehicle Arrives and Requests Parking
+
 User opens the parking application.
 
 Vehicle information is submitted to the Parking Service.
