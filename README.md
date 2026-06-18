@@ -1,4 +1,4 @@
-<img width="1810" height="521" alt="image" src="https://github.com/user-attachments/assets/015a8b8f-f654-4dba-931d-d7b810ee9495" />
+<img width="2896" height="1018" alt="image" src="https://github.com/user-attachments/assets/44219f75-b9d2-443d-a1cf-d817f1541eb9" />
 
 Step by Step Flow
 
