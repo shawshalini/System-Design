@@ -27,6 +27,7 @@ SUV
 This helps identify the appropriate parking spot type.
 
 2️⃣ Finding an Available Spot
+
 Spot Allocation Service searches the Parking Spot Database for available spots matching the vehicle type.
 
 Two possible outcomes:
@@ -44,6 +45,7 @@ User waits until a spot becomes available.
 
 
 3️⃣ Spot Reservation
+
 Reservation Service retrieves all available spots.
 
 User selects a preferred parking spot.
@@ -52,6 +54,7 @@ Reservation Service temporarily locks the selected spot to prevent double bookin
 
 
 4️⃣ Payment Processing
+
 Reservation Service sends the request to Payment Service.
 
 Payment Success
@@ -87,6 +90,7 @@ Vehicle Details
 Reservation Expiry Service starts a 30-minute countdown timer.
 
 6️⃣ Reservation Expiry Service
+
 User Arrives Within 30 Minutes
 
 Vehicle reaches the parking lot.
@@ -110,6 +114,7 @@ Waitlist Service Trigger picks this up and notifies the next person waiting.
 
 
 8️⃣ Parking Duration Reminder
+
 While the vehicle is parked, Notification Service monitors the parking duration.
 
 A reminder notification is sent to the user 10 minutes before the booked parking duration ends.
@@ -120,6 +125,7 @@ Your parking session will expire in 10 minutes.
 This allows the user to extend the booking or prepare to exit.
 
 9️⃣ Vehicle Exit
+
 User scans the ticket at Exit Scan.
 
 Exit Scan validates the ticket and completes the parking session.
